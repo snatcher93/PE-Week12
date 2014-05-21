@@ -5,3 +5,5 @@ D:\Work\Project\C#\Week12\Invader\obj\x86\Debug\Invader.Properties.Resources.res
 D:\Work\Project\C#\Week12\Invader\obj\x86\Debug\Invader.csproj.GenerateResource.Cache
 D:\Work\Project\C#\Week12\Invader\obj\x86\Debug\Invader.exe
 D:\Work\Project\C#\Week12\Invader\obj\x86\Debug\Invader.pdb
+C:\Work\CShartp\PE-Week12\Invader\obj\x86\Debug\Invader.exe
+C:\Work\CShartp\PE-Week12\Invader\obj\x86\Debug\Invader.pdb

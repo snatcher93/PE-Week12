@@ -1,0 +1,7 @@
+C:\Work\CShartp\PE-Week12\Painter\bin\Debug\Painter.exe
+C:\Work\CShartp\PE-Week12\Painter\bin\Debug\Painter.pdb
+C:\Work\CShartp\PE-Week12\Painter\obj\x86\Debug\Painter.Form1.resources
+C:\Work\CShartp\PE-Week12\Painter\obj\x86\Debug\Painter.Properties.Resources.resources
+C:\Work\CShartp\PE-Week12\Painter\obj\x86\Debug\Painter.csproj.GenerateResource.Cache
+C:\Work\CShartp\PE-Week12\Painter\obj\x86\Debug\Painter.exe
+C:\Work\CShartp\PE-Week12\Painter\obj\x86\Debug\Painter.pdb

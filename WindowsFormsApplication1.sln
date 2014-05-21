@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Score", "Score\Score.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invader", "Invader\Invader.csproj", "{A9C84A07-9D06-4C87-94C8-821018A0B6B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Painter", "Painter\Painter.csproj", "{6485006C-3342-410E-B929-B0CE2E003528}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -37,6 +39,10 @@ Global
 		{A9C84A07-9D06-4C87-94C8-821018A0B6B0}.Debug|x86.Build.0 = Debug|x86
 		{A9C84A07-9D06-4C87-94C8-821018A0B6B0}.Release|x86.ActiveCfg = Release|x86
 		{A9C84A07-9D06-4C87-94C8-821018A0B6B0}.Release|x86.Build.0 = Release|x86
+		{6485006C-3342-410E-B929-B0CE2E003528}.Debug|x86.ActiveCfg = Debug|x86
+		{6485006C-3342-410E-B929-B0CE2E003528}.Debug|x86.Build.0 = Debug|x86
+		{6485006C-3342-410E-B929-B0CE2E003528}.Release|x86.ActiveCfg = Release|x86
+		{6485006C-3342-410E-B929-B0CE2E003528}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
