@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace Painter
 {
@@ -18,7 +19,7 @@ namespace Painter
         private Point End;
         private Shapes Shape = Shapes.RECTANGLE;
         private Color ShapeColor = Color.Blue;
-
+        private ArrayList shapes = new ArrayList();
         public Form1()
         {
             InitializeComponent();
@@ -59,19 +60,24 @@ namespace Painter
                     switch (Shape)
                     {
                         case Shapes.RECTANGLE:
-                            g.FillRectangle(new SolidBrush(ShapeColor), Start.X, Start.Y, e.Location.X - Start.X, e.Location.Y - Start.Y);
-                            g.DrawRectangle(Pens.White, Start.X, Start.Y, e.Location.X - Start.X, e.Location.Y - Start.Y);
+                            shapes.Add(
+                                new Rectangle(Start, End, ShapeColor));
                             break;
                         case Shapes.TRIANGLE:
-                            Point [] points = new Point [] {new Point(Start.X + (End.X - Start.X)/2, Start.Y), new Point(Start.X, End.Y), End};
-                            g.FillPolygon(new SolidBrush(ShapeColor), points);
-                            g.DrawPolygon(Pens.Black, points);
+                            shapes.Add(
+                                new Triangle(
+                                    new Point(Start.X + (End.X - Start.X) / 2, Start.Y), 
+                                    new Point(Start.X, End.Y),
+                                    End,
+                                    ShapeColor));
                             break;
                         case Shapes.CIRCLE:
-                            g.FillEllipse(new SolidBrush(ShapeColor), Start.X, Start.Y, e.Location.X - Start.X, e.Location.Y - Start.Y);
-                            g.DrawEllipse(Pens.Coral, Start.X, Start.Y, e.Location.X - Start.X, e.Location.Y - Start.Y);
+                            shapes.Add(
+                                new Circle(Start, End, ShapeColor));
                             break;
                     }
+
+                    Invalidate();
                 }
 
                 Drawing = false;
@@ -108,6 +114,14 @@ namespace Painter
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 ShapeColor = dialog.Color;
+            }
+        }
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            foreach (Shape shape in shapes)
+            {
+                shape.Show(e.Graphics);
             }
         }
     }
