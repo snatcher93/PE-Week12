@@ -1,0 +1,7 @@
+D:\Work\Project\C#\Week12\PictureBox\bin\Debug\PictureBox.exe
+D:\Work\Project\C#\Week12\PictureBox\bin\Debug\PictureBox.pdb
+D:\Work\Project\C#\Week12\PictureBox\obj\x86\Debug\PictureBox.Form1.resources
+D:\Work\Project\C#\Week12\PictureBox\obj\x86\Debug\PictureBox.Properties.Resources.resources
+D:\Work\Project\C#\Week12\PictureBox\obj\x86\Debug\PictureBox.csproj.GenerateResource.Cache
+D:\Work\Project\C#\Week12\PictureBox\obj\x86\Debug\PictureBox.exe
+D:\Work\Project\C#\Week12\PictureBox\obj\x86\Debug\PictureBox.pdb

@@ -1,0 +1,4 @@
+D:\Work\Project\C#\Week12\AddressBook\obj\x86\Release\AddressBook.Form1.resources
+D:\Work\Project\C#\Week12\AddressBook\obj\x86\Release\AddressBook.Properties.Resources.resources
+D:\Work\Project\C#\Week12\AddressBook\obj\x86\Release\AddressBook.ScoreDialog.resources
+D:\Work\Project\C#\Week12\AddressBook\obj\x86\Release\Score.csproj.GenerateResource.Cache

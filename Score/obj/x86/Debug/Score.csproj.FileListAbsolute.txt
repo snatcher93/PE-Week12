@@ -1,0 +1,16 @@
+D:\Work\Project\C#\Week12\AddressBook\obj\x86\Debug\AddressBook.Properties.Resources.resources
+D:\Work\Project\C#\Week12\AddressBook\obj\x86\Debug\Score.csproj.GenerateResource.Cache
+D:\Work\Project\C#\Week12\AddressBook\bin\Debug\AddressBook.exe
+D:\Work\Project\C#\Week12\AddressBook\bin\Debug\AddressBook.pdb
+D:\Work\Project\C#\Week12\AddressBook\obj\x86\Debug\AddressBook.exe
+D:\Work\Project\C#\Week12\AddressBook\obj\x86\Debug\AddressBook.pdb
+D:\Work\Project\C#\Week12\AddressBook\obj\x86\Debug\StudentScore.Form1.resources
+D:\Work\Project\C#\Week12\AddressBook\obj\x86\Debug\StudentScore.ScoreDialog.resources
+D:\Work\Project\C#\Week12\Score\bin\Debug\Score.exe
+D:\Work\Project\C#\Week12\Score\bin\Debug\Score.pdb
+D:\Work\Project\C#\Week12\Score\obj\x86\Debug\StudentScore.Form1.resources
+D:\Work\Project\C#\Week12\Score\obj\x86\Debug\Score.Properties.Resources.resources
+D:\Work\Project\C#\Week12\Score\obj\x86\Debug\StudentScore.ScoreDialog.resources
+D:\Work\Project\C#\Week12\Score\obj\x86\Debug\Score.csproj.GenerateResource.Cache
+D:\Work\Project\C#\Week12\Score\obj\x86\Debug\Score.exe
+D:\Work\Project\C#\Week12\Score\obj\x86\Debug\Score.pdb
