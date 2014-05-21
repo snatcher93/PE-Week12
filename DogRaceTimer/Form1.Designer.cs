@@ -49,15 +49,17 @@
             // 
             this.track.Image = ((System.Drawing.Image)(resources.GetObject("track.Image")));
             this.track.Location = new System.Drawing.Point(1, 1);
+            this.track.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.track.Name = "track";
-            this.track.Size = new System.Drawing.Size(603, 191);
+            this.track.Size = new System.Drawing.Size(602, 202);
             this.track.TabIndex = 0;
             this.track.TabStop = false;
             // 
             // dog1
             // 
             this.dog1.Image = ((System.Drawing.Image)(resources.GetObject("dog1.Image")));
-            this.dog1.Location = new System.Drawing.Point(12, 12);
+            this.dog1.Location = new System.Drawing.Point(14, 15);
+            this.dog1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dog1.Name = "dog1";
             this.dog1.Size = new System.Drawing.Size(75, 20);
             this.dog1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -66,9 +68,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(322, 209);
+            this.button1.Location = new System.Drawing.Point(347, 222);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(86, 29);
             this.button1.TabIndex = 2;
             this.button1.Text = "경주시작";
             this.button1.UseVisualStyleBackColor = true;
@@ -77,7 +80,8 @@
             // dog2
             // 
             this.dog2.Image = ((System.Drawing.Image)(resources.GetObject("dog2.Image")));
-            this.dog2.Location = new System.Drawing.Point(13, 63);
+            this.dog2.Location = new System.Drawing.Point(15, 63);
+            this.dog2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dog2.Name = "dog2";
             this.dog2.Size = new System.Drawing.Size(75, 20);
             this.dog2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -87,7 +91,8 @@
             // dog3
             // 
             this.dog3.Image = ((System.Drawing.Image)(resources.GetObject("dog3.Image")));
-            this.dog3.Location = new System.Drawing.Point(13, 112);
+            this.dog3.Location = new System.Drawing.Point(15, 115);
+            this.dog3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dog3.Name = "dog3";
             this.dog3.Size = new System.Drawing.Size(75, 20);
             this.dog3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -97,7 +102,8 @@
             // dog4
             // 
             this.dog4.Image = ((System.Drawing.Image)(resources.GetObject("dog4.Image")));
-            this.dog4.Location = new System.Drawing.Point(13, 162);
+            this.dog4.Location = new System.Drawing.Point(15, 168);
+            this.dog4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dog4.Name = "dog4";
             this.dog4.Size = new System.Drawing.Size(75, 20);
             this.dog4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -106,9 +112,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(232, 209);
+            this.button2.Location = new System.Drawing.Point(244, 222);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(86, 29);
             this.button2.TabIndex = 6;
             this.button2.Text = "초기화";
             this.button2.UseVisualStyleBackColor = true;
@@ -120,9 +127,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(603, 245);
+            this.ClientSize = new System.Drawing.Size(603, 264);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dog4);
             this.Controls.Add(this.dog3);
@@ -130,6 +137,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dog1);
             this.Controls.Add(this.track);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.track)).EndInit();

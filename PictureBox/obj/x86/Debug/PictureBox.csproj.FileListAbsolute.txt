@@ -5,3 +5,5 @@ D:\Work\Project\C#\Week12\PictureBox\obj\x86\Debug\PictureBox.Properties.Resourc
 D:\Work\Project\C#\Week12\PictureBox\obj\x86\Debug\PictureBox.csproj.GenerateResource.Cache
 D:\Work\Project\C#\Week12\PictureBox\obj\x86\Debug\PictureBox.exe
 D:\Work\Project\C#\Week12\PictureBox\obj\x86\Debug\PictureBox.pdb
+C:\Work\CShartp\PE-Week12\PictureBox\obj\x86\Debug\PictureBox.exe
+C:\Work\CShartp\PE-Week12\PictureBox\obj\x86\Debug\PictureBox.pdb

@@ -5,3 +5,10 @@ D:\Work\Project\C#\Week12\DogRaceTimer\bin\Debug\DogRaceTimer.pdb
 D:\Work\Project\C#\Week12\DogRaceTimer\obj\x86\Debug\DogRaceTimer.Form1.resources
 D:\Work\Project\C#\Week12\DogRaceTimer\obj\x86\Debug\DogRaceTimer.exe
 D:\Work\Project\C#\Week12\DogRaceTimer\obj\x86\Debug\DogRaceTimer.pdb
+C:\Work\CShartp\PE-Week12\DogRaceTimer\obj\x86\Debug\DogRaceTimer.exe
+C:\Work\CShartp\PE-Week12\DogRaceTimer\obj\x86\Debug\DogRaceTimer.pdb
+C:\Work\CShartp\PE-Week12\DogRaceTimer\bin\Debug\DogRaceTimer.exe
+C:\Work\CShartp\PE-Week12\DogRaceTimer\bin\Debug\DogRaceTimer.pdb
+C:\Work\CShartp\PE-Week12\DogRaceTimer\obj\x86\Debug\DogRaceTimer.Form1.resources
+C:\Work\CShartp\PE-Week12\DogRaceTimer\obj\x86\Debug\DogRaceTimer.Properties.Resources.resources
+C:\Work\CShartp\PE-Week12\DogRaceTimer\obj\x86\Debug\DogRaceTimer.csproj.GenerateResource.Cache

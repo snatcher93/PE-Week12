@@ -14,3 +14,5 @@ D:\Work\Project\C#\Week12\Score\obj\x86\Debug\StudentScore.ScoreDialog.resources
 D:\Work\Project\C#\Week12\Score\obj\x86\Debug\Score.csproj.GenerateResource.Cache
 D:\Work\Project\C#\Week12\Score\obj\x86\Debug\Score.exe
 D:\Work\Project\C#\Week12\Score\obj\x86\Debug\Score.pdb
+C:\Work\CShartp\PE-Week12\Score\obj\x86\Debug\Score.exe
+C:\Work\CShartp\PE-Week12\Score\obj\x86\Debug\Score.pdb
