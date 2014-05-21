@@ -17,6 +17,7 @@ namespace Painter
         private Point Start;
         private Point End;
         private Shapes Shape = Shapes.RECTANGLE;
+        private Color ShapeColor = Color.Blue;
 
         public Form1()
         {
@@ -58,16 +59,16 @@ namespace Painter
                     switch (Shape)
                     {
                         case Shapes.RECTANGLE:
-                            g.FillRectangle(Brushes.Blue, Start.X, Start.Y, e.Location.X - Start.X, e.Location.Y - Start.Y);
+                            g.FillRectangle(new SolidBrush(ShapeColor), Start.X, Start.Y, e.Location.X - Start.X, e.Location.Y - Start.Y);
                             g.DrawRectangle(Pens.White, Start.X, Start.Y, e.Location.X - Start.X, e.Location.Y - Start.Y);
                             break;
                         case Shapes.TRIANGLE:
                             Point [] points = new Point [] {new Point(Start.X + (End.X - Start.X)/2, Start.Y), new Point(Start.X, End.Y), End};
-                            g.FillPolygon(Brushes.Green, points);
+                            g.FillPolygon(new SolidBrush(ShapeColor), points);
                             g.DrawPolygon(Pens.Black, points);
                             break;
                         case Shapes.CIRCLE:
-                            g.FillEllipse(Brushes.Yellow, Start.X, Start.Y, e.Location.X - Start.X, e.Location.Y - Start.Y);
+                            g.FillEllipse(new SolidBrush(ShapeColor), Start.X, Start.Y, e.Location.X - Start.X, e.Location.Y - Start.Y);
                             g.DrawEllipse(Pens.Coral, Start.X, Start.Y, e.Location.X - Start.X, e.Location.Y - Start.Y);
                             break;
                     }
@@ -99,6 +100,15 @@ namespace Painter
             RectangleTool.Checked = false;
             CircleTool.Checked = true;
             TriangleTool.Checked = false;
+        }
+
+        private void toolStripButton1_Click_1(object sender, EventArgs e)
+        {
+            ColorDialog dialog = new ColorDialog();
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                ShapeColor = dialog.Color;
+            }
         }
     }
 }

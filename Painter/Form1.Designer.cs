@@ -33,18 +33,21 @@
             this.RectangleTool = new System.Windows.Forms.ToolStripButton();
             this.TriangleTool = new System.Windows.Forms.ToolStripButton();
             this.CircleTool = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
             // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.RectangleTool,
             this.TriangleTool,
-            this.CircleTool});
+            this.CircleTool,
+            this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(600, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(600, 27);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -57,7 +60,7 @@
             this.RectangleTool.Image = ((System.Drawing.Image)(resources.GetObject("RectangleTool.Image")));
             this.RectangleTool.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.RectangleTool.Name = "RectangleTool";
-            this.RectangleTool.Size = new System.Drawing.Size(23, 22);
+            this.RectangleTool.Size = new System.Drawing.Size(24, 24);
             this.RectangleTool.Text = "toolStripButton1";
             this.RectangleTool.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
@@ -68,7 +71,7 @@
             this.TriangleTool.Image = ((System.Drawing.Image)(resources.GetObject("TriangleTool.Image")));
             this.TriangleTool.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.TriangleTool.Name = "TriangleTool";
-            this.TriangleTool.Size = new System.Drawing.Size(23, 22);
+            this.TriangleTool.Size = new System.Drawing.Size(24, 24);
             this.TriangleTool.Text = "toolStripButton2";
             this.TriangleTool.Click += new System.EventHandler(this.TriangleTool_Click);
             // 
@@ -79,9 +82,19 @@
             this.CircleTool.Image = ((System.Drawing.Image)(resources.GetObject("CircleTool.Image")));
             this.CircleTool.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.CircleTool.Name = "CircleTool";
-            this.CircleTool.Size = new System.Drawing.Size(23, 22);
+            this.CircleTool.Size = new System.Drawing.Size(24, 24);
             this.CircleTool.Text = "toolStripButton3";
             this.CircleTool.Click += new System.EventHandler(this.CircleTool_Click);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(24, 24);
+            this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click_1);
             // 
             // Form1
             // 
@@ -108,6 +121,7 @@
         private System.Windows.Forms.ToolStripButton RectangleTool;
         private System.Windows.Forms.ToolStripButton TriangleTool;
         private System.Windows.Forms.ToolStripButton CircleTool;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
 
     }
 }
