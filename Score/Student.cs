@@ -7,30 +7,30 @@ namespace StudentScore
 {
     public class Student
     {
-        private string Name;
-        private string Subject;
-        private int Score;
+        private string name;
+        private string subject;
+        private int score;
 
-        public Student(string Name, string Subject, int Score)
+        public Student(string name, string subject, int score)
         {
-            this.Name = Name;
-            this.Subject = Subject;
-            this.Score = Score;
+            this.name = name;
+            this.subject = subject;
+            this.score = score;
         }
 
         public string GetName()
         {
-            return Name;
+            return name;
         }
 
         public string GetSubject()
         {
-            return Subject;
+            return subject;
         }
 
         public int GetScore()
         {
-            return Score;
+            return score;
         }
     }
 }

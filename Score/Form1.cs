@@ -22,7 +22,7 @@ namespace StudentScore
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 Student student = dialog.student;
-                listbox1.Items.Add(student.GetName() + "\t" + student.GetSubject() + "\t" + student.GetScore());
+                scoresCtrl.Items.Add(student.GetName() + "\t" + student.GetSubject() + "\t" + student.GetScore());
             }
         }
     }

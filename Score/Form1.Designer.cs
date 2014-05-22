@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listbox1 = new System.Windows.Forms.ListBox();
+            this.scoresCtrl = new System.Windows.Forms.ListBox();
             this.add = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listbox1
+            // scoresCtrl
             // 
-            this.listbox1.FormattingEnabled = true;
-            this.listbox1.ItemHeight = 12;
-            this.listbox1.Location = new System.Drawing.Point(-2, -1);
-            this.listbox1.Name = "listbox1";
-            this.listbox1.Size = new System.Drawing.Size(286, 208);
-            this.listbox1.TabIndex = 0;
+            this.scoresCtrl.FormattingEnabled = true;
+            this.scoresCtrl.ItemHeight = 12;
+            this.scoresCtrl.Location = new System.Drawing.Point(-2, -1);
+            this.scoresCtrl.Name = "scoresCtrl";
+            this.scoresCtrl.Size = new System.Drawing.Size(286, 208);
+            this.scoresCtrl.TabIndex = 0;
             // 
             // add
             // 
@@ -57,7 +57,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 252);
             this.Controls.Add(this.add);
-            this.Controls.Add(this.listbox1);
+            this.Controls.Add(this.scoresCtrl);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -66,7 +66,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listbox1;
+        private System.Windows.Forms.ListBox scoresCtrl;
         private System.Windows.Forms.Button add;
     }
 }

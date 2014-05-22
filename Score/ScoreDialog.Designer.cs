@@ -30,13 +30,13 @@
         {
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.Score = new System.Windows.Forms.NumericUpDown();
-            this.Subject = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.StudentName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.Score)).BeginInit();
+            this.ScoreInputCtrl = new System.Windows.Forms.NumericUpDown();
+            this.SubjectInputCtrl = new System.Windows.Forms.TextBox();
+            this.SubjectLabelCtrl = new System.Windows.Forms.Label();
+            this.NameInputCtrl = new System.Windows.Forms.TextBox();
+            this.NameLabelCtrl = new System.Windows.Forms.Label();
+            this.ScoreLabelCtrl = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.ScoreInputCtrl)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -59,53 +59,53 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Score
+            // ScoreInputCtrl
             // 
-            this.Score.Location = new System.Drawing.Point(80, 109);
-            this.Score.Name = "Score";
-            this.Score.Size = new System.Drawing.Size(185, 21);
-            this.Score.TabIndex = 13;
+            this.ScoreInputCtrl.Location = new System.Drawing.Point(80, 109);
+            this.ScoreInputCtrl.Name = "ScoreInputCtrl";
+            this.ScoreInputCtrl.Size = new System.Drawing.Size(185, 21);
+            this.ScoreInputCtrl.TabIndex = 13;
             // 
-            // Subject
+            // SubjectInputCtrl
             // 
-            this.Subject.Location = new System.Drawing.Point(80, 63);
-            this.Subject.Name = "Subject";
-            this.Subject.Size = new System.Drawing.Size(185, 21);
-            this.Subject.TabIndex = 11;
+            this.SubjectInputCtrl.Location = new System.Drawing.Point(80, 63);
+            this.SubjectInputCtrl.Name = "SubjectInputCtrl";
+            this.SubjectInputCtrl.Size = new System.Drawing.Size(185, 21);
+            this.SubjectInputCtrl.TabIndex = 11;
             // 
-            // label2
+            // SubjectLabelCtrl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 66);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 12);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "과목";
+            this.SubjectLabelCtrl.AutoSize = true;
+            this.SubjectLabelCtrl.Location = new System.Drawing.Point(22, 66);
+            this.SubjectLabelCtrl.Name = "SubjectLabelCtrl";
+            this.SubjectLabelCtrl.Size = new System.Drawing.Size(29, 12);
+            this.SubjectLabelCtrl.TabIndex = 10;
+            this.SubjectLabelCtrl.Text = "과목";
             // 
-            // StudentName
+            // NameInputCtrl
             // 
-            this.StudentName.Location = new System.Drawing.Point(80, 21);
-            this.StudentName.Name = "StudentName";
-            this.StudentName.Size = new System.Drawing.Size(185, 21);
-            this.StudentName.TabIndex = 9;
+            this.NameInputCtrl.Location = new System.Drawing.Point(80, 21);
+            this.NameInputCtrl.Name = "NameInputCtrl";
+            this.NameInputCtrl.Size = new System.Drawing.Size(185, 21);
+            this.NameInputCtrl.TabIndex = 9;
             // 
-            // label1
+            // NameLabelCtrl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 12);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "이름";
+            this.NameLabelCtrl.AutoSize = true;
+            this.NameLabelCtrl.Location = new System.Drawing.Point(22, 24);
+            this.NameLabelCtrl.Name = "NameLabelCtrl";
+            this.NameLabelCtrl.Size = new System.Drawing.Size(29, 12);
+            this.NameLabelCtrl.TabIndex = 8;
+            this.NameLabelCtrl.Text = "이름";
             // 
-            // label4
+            // ScoreLabelCtrl
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 114);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 12);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "성적";
+            this.ScoreLabelCtrl.AutoSize = true;
+            this.ScoreLabelCtrl.Location = new System.Drawing.Point(24, 114);
+            this.ScoreLabelCtrl.Name = "ScoreLabelCtrl";
+            this.ScoreLabelCtrl.Size = new System.Drawing.Size(29, 12);
+            this.ScoreLabelCtrl.TabIndex = 16;
+            this.ScoreLabelCtrl.Text = "성적";
             // 
             // ScoreDialog
             // 
@@ -114,17 +114,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.button2;
             this.ClientSize = new System.Drawing.Size(284, 194);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.ScoreLabelCtrl);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.Score);
-            this.Controls.Add(this.Subject);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.StudentName);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ScoreInputCtrl);
+            this.Controls.Add(this.SubjectInputCtrl);
+            this.Controls.Add(this.SubjectLabelCtrl);
+            this.Controls.Add(this.NameInputCtrl);
+            this.Controls.Add(this.NameLabelCtrl);
             this.Name = "ScoreDialog";
             this.Text = "ScoreDialog";
-            ((System.ComponentModel.ISupportInitialize)(this.Score)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ScoreInputCtrl)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,12 +134,12 @@
 
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.NumericUpDown Score;
+        private System.Windows.Forms.NumericUpDown ScoreInputCtrl;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox Subject;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox StudentName;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox SubjectInputCtrl;
+        private System.Windows.Forms.Label SubjectLabelCtrl;
+        private System.Windows.Forms.TextBox NameInputCtrl;
+        private System.Windows.Forms.Label NameLabelCtrl;
+        private System.Windows.Forms.Label ScoreLabelCtrl;
     }
 }

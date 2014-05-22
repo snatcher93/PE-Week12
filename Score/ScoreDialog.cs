@@ -20,7 +20,7 @@ namespace StudentScore
 
         private void button1_Click(object sender, EventArgs e)
         {
-            student = new Student(StudentName.Text, Subject.Text, (int)Score.Value);
+            student = new Student(NameInputCtrl.Text, SubjectInputCtrl.Text, (int)ScoreInputCtrl.Value);
             this.DialogResult = DialogResult.OK;
         }
     }
