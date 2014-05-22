@@ -1,9 +1,0 @@
-D:\Work\Project\C#\Week12\Invader\bin\Debug\Invader.exe
-D:\Work\Project\C#\Week12\Invader\bin\Debug\Invader.pdb
-D:\Work\Project\C#\Week12\Invader\obj\x86\Debug\Invader.Form1.resources
-D:\Work\Project\C#\Week12\Invader\obj\x86\Debug\Invader.Properties.Resources.resources
-D:\Work\Project\C#\Week12\Invader\obj\x86\Debug\Invader.csproj.GenerateResource.Cache
-D:\Work\Project\C#\Week12\Invader\obj\x86\Debug\Invader.exe
-D:\Work\Project\C#\Week12\Invader\obj\x86\Debug\Invader.pdb
-C:\Work\CShartp\PE-Week12\Invader\obj\x86\Debug\Invader.exe
-C:\Work\CShartp\PE-Week12\Invader\obj\x86\Debug\Invader.pdb
