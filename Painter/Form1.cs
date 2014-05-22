@@ -14,79 +14,91 @@ namespace Painter
  
     public partial class Form1 : Form
     {
-        private bool Drawing = false;
-        private Point Start;
-        private Point End;
-        private Shapes Shape = Shapes.RECTANGLE;
-        private Color ShapeColor = Color.Blue;
+        private bool isMoving = false;                  // 마우스 이동 중인지의 여부
+        private Point start;                            // 시작 위치
+        private Point end;                              // 종료 위치
+
+        private Shapes shapeType = Shapes.RECTANGLE;    // 그림의 종류
+        private Color shapeColor = Color.Blue;          // 색상
+        
         private ArrayList shapes = new ArrayList();
+        
         public Form1()
         {
             InitializeComponent();
         }
 
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            foreach (Shape shape in shapes)
+            {
+                shape.Show(e.Graphics);
+            }
+        }
+
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
-            Drawing = !Drawing;
-            if (Drawing)
-            {
-                Start = End = e.Location;
-                ControlPaint.DrawReversibleFrame(new System.Drawing.Rectangle(PointToScreen(Start), new Size(End.X - Start.X, End.Y - Start.Y)), Color.Gray, FrameStyle.Dashed);
-            }
+            isMoving = true;
+            start = end = e.Location;
+            DrawMovingRectangle(start, end);
         }
 
         private void Form1_MouseMove(object sender, MouseEventArgs e)
         {
-            if (Drawing)
+            if (isMoving)
             {
                 using (Graphics g = CreateGraphics())
                 {
-                    ControlPaint.DrawReversibleFrame(new System.Drawing.Rectangle(PointToScreen(Start), new Size(End.X - Start.X, End.Y - Start.Y)), Color.Gray, FrameStyle.Dashed);
-                    End = e.Location;
-                    ControlPaint.DrawReversibleFrame(new System.Drawing.Rectangle(PointToScreen(Start), new Size(End.X - Start.X, End.Y - Start.Y)), Color.Gray, FrameStyle.Dashed);
+                    DrawMovingRectangle(start, end);
+                    end = e.Location;
+                    DrawMovingRectangle(start, end);
                 }
             }
         }
 
         private void Form1_MouseUp(object sender, MouseEventArgs e)
         {
-            if (Drawing)
+            if (isMoving)
             {
                 using (Graphics g = CreateGraphics())
                 {
-                    ControlPaint.DrawReversibleFrame(new System.Drawing.Rectangle(PointToScreen(Start), new Size(End.X - Start.X, End.Y - Start.Y)), Color.Gray, FrameStyle.Dashed);
-                    End = e.Location;
+                    DrawMovingRectangle(start, end);
+                    end = e.Location;
 
-                    switch (Shape)
+                    switch (shapeType)
                     {
                         case Shapes.RECTANGLE:
-                            shapes.Add(
-                                new Rectangle(Start, End, ShapeColor));
+                            shapes.Add(new Rectangle(start, end, shapeColor));
                             break;
                         case Shapes.TRIANGLE:
-                            shapes.Add(
-                                new Triangle(
-                                    new Point(Start.X + (End.X - Start.X) / 2, Start.Y), 
-                                    new Point(Start.X, End.Y),
-                                    End,
-                                    ShapeColor));
+                            shapes.Add(new Triangle(
+                                    new Point(start.X + (end.X - start.X) / 2, start.Y), 
+                                    new Point(start.X, end.Y),
+                                    end,
+                                    shapeColor));
                             break;
                         case Shapes.CIRCLE:
                             shapes.Add(
-                                new Circle(Start, End, ShapeColor));
+                                new Circle(start, end, shapeColor));
                             break;
                     }
 
                     Invalidate();
                 }
 
-                Drawing = false;
+                isMoving = false;
             }
+        }
+
+        private void DrawMovingRectangle(Point start, Point end)
+        {
+            ControlPaint.DrawReversibleFrame(new System.Drawing.Rectangle(PointToScreen(start), new Size(end.X - start.X, end.Y - start.Y)), Color.Gray, FrameStyle.Dashed);
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            Shape = Shapes.RECTANGLE;
+            shapeType = Shapes.RECTANGLE;
+
             RectangleTool.Checked = true;
             CircleTool.Checked = false;
             TriangleTool.Checked = false;
@@ -94,7 +106,8 @@ namespace Painter
 
         private void TriangleTool_Click(object sender, EventArgs e)
         {
-            Shape = Shapes.TRIANGLE;
+            shapeType = Shapes.TRIANGLE;
+            
             RectangleTool.Checked = false;
             CircleTool.Checked = false;
             TriangleTool.Checked = true;
@@ -102,7 +115,8 @@ namespace Painter
 
         private void CircleTool_Click(object sender, EventArgs e)
         {
-            Shape = Shapes.CIRCLE;
+            shapeType = Shapes.CIRCLE;
+            
             RectangleTool.Checked = false;
             CircleTool.Checked = true;
             TriangleTool.Checked = false;
@@ -113,15 +127,7 @@ namespace Painter
             ColorDialog dialog = new ColorDialog();
             if (dialog.ShowDialog() == DialogResult.OK)
             {
-                ShapeColor = dialog.Color;
-            }
-        }
-
-        private void Form1_Paint(object sender, PaintEventArgs e)
-        {
-            foreach (Shape shape in shapes)
-            {
-                shape.Show(e.Graphics);
+                shapeColor = dialog.Color;
             }
         }
     }

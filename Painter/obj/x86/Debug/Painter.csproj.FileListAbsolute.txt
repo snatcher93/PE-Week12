@@ -7,3 +7,8 @@ C:\Work\CShartp\PE-Week12\Painter\obj\x86\Debug\Painter.exe
 C:\Work\CShartp\PE-Week12\Painter\obj\x86\Debug\Painter.pdb
 D:\Work\Project\C#\PE-Week12\Painter\obj\x86\Debug\Painter.exe
 D:\Work\Project\C#\PE-Week12\Painter\obj\x86\Debug\Painter.pdb
+D:\Work\Project\C#\PE-Week12\Painter\bin\Debug\Painter.exe
+D:\Work\Project\C#\PE-Week12\Painter\bin\Debug\Painter.pdb
+D:\Work\Project\C#\PE-Week12\Painter\obj\x86\Debug\Painter.Form1.resources
+D:\Work\Project\C#\PE-Week12\Painter\obj\x86\Debug\Painter.Properties.Resources.resources
+D:\Work\Project\C#\PE-Week12\Painter\obj\x86\Debug\Painter.csproj.GenerateResource.Cache
