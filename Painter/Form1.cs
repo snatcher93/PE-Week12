@@ -21,7 +21,7 @@ namespace Painter
         private Shapes shapeType = Shapes.RECTANGLE;    // 그림의 종류
         private Color shapeColor = Color.Blue;          // 색상
         
-        private ArrayList shapes = new ArrayList();
+        private ArrayList shapes = new ArrayList();     // 도형의 목록
         
         public Form1()
         {
