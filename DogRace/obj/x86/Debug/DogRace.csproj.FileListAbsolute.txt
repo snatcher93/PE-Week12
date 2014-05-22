@@ -19,3 +19,10 @@ C:\Work\CShartp\PE-Week12\DogRace\bin\Debug\DogRace.pdb
 C:\Work\CShartp\PE-Week12\DogRace\obj\x86\Debug\DogRace.Form1.resources
 C:\Work\CShartp\PE-Week12\DogRace\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Work\CShartp\PE-Week12\DogRace\obj\x86\Debug\DogRace.csproj.GenerateResource.Cache
+D:\Work\Project\C#\PE-Week12\DogRace\obj\x86\Debug\DogRace.exe
+D:\Work\Project\C#\PE-Week12\DogRace\obj\x86\Debug\DogRace.pdb
+D:\Work\Project\C#\PE-Week12\DogRace\bin\Debug\DogRace.exe
+D:\Work\Project\C#\PE-Week12\DogRace\bin\Debug\DogRace.pdb
+D:\Work\Project\C#\PE-Week12\DogRace\obj\x86\Debug\DogRace.Form1.resources
+D:\Work\Project\C#\PE-Week12\DogRace\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\Work\Project\C#\PE-Week12\DogRace\obj\x86\Debug\DogRace.csproj.GenerateResource.Cache

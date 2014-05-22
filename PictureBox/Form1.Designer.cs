@@ -29,30 +29,30 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.dog = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dog)).BeginInit();
+            this.dogCtrl = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dogCtrl)).BeginInit();
             this.SuspendLayout();
             // 
-            // dog
+            // dogCtrl
             // 
-            this.dog.Image = ((System.Drawing.Image)(resources.GetObject("dog.Image")));
-            this.dog.Location = new System.Drawing.Point(50, 108);
-            this.dog.Name = "dog";
-            this.dog.Size = new System.Drawing.Size(75, 20);
-            this.dog.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.dog.TabIndex = 0;
-            this.dog.TabStop = false;
+            this.dogCtrl.Image = ((System.Drawing.Image)(resources.GetObject("dogCtrl.Image")));
+            this.dogCtrl.Location = new System.Drawing.Point(50, 108);
+            this.dogCtrl.Name = "dogCtrl";
+            this.dogCtrl.Size = new System.Drawing.Size(75, 20);
+            this.dogCtrl.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.dogCtrl.TabIndex = 0;
+            this.dogCtrl.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(556, 262);
-            this.Controls.Add(this.dog);
+            this.Controls.Add(this.dogCtrl);
             this.Name = "Form1";
             this.Text = "Form1";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.dog)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dogCtrl)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -60,7 +60,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox dog;
+        private System.Windows.Forms.PictureBox dogCtrl;
     }
 }
 

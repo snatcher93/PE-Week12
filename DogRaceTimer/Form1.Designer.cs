@@ -30,92 +30,85 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.track = new System.Windows.Forms.PictureBox();
-            this.dog1 = new System.Windows.Forms.PictureBox();
+            this.trackCtrl = new System.Windows.Forms.PictureBox();
+            this.dog1Ctrl = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.dog2 = new System.Windows.Forms.PictureBox();
-            this.dog3 = new System.Windows.Forms.PictureBox();
-            this.dog4 = new System.Windows.Forms.PictureBox();
+            this.dog2Ctrl = new System.Windows.Forms.PictureBox();
+            this.dog3Ctrl = new System.Windows.Forms.PictureBox();
+            this.dog4Ctrl = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.track)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dog1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dog2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dog3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dog4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackCtrl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dog1Ctrl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dog2Ctrl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dog3Ctrl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dog4Ctrl)).BeginInit();
             this.SuspendLayout();
             // 
-            // track
+            // trackCtrl
             // 
-            this.track.Image = ((System.Drawing.Image)(resources.GetObject("track.Image")));
-            this.track.Location = new System.Drawing.Point(1, 1);
-            this.track.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.track.Name = "track";
-            this.track.Size = new System.Drawing.Size(602, 202);
-            this.track.TabIndex = 0;
-            this.track.TabStop = false;
+            this.trackCtrl.Image = ((System.Drawing.Image)(resources.GetObject("trackCtrl.Image")));
+            this.trackCtrl.Location = new System.Drawing.Point(1, 1);
+            this.trackCtrl.Name = "trackCtrl";
+            this.trackCtrl.Size = new System.Drawing.Size(603, 200);
+            this.trackCtrl.TabIndex = 0;
+            this.trackCtrl.TabStop = false;
             // 
-            // dog1
+            // dog1Ctrl
             // 
-            this.dog1.Image = ((System.Drawing.Image)(resources.GetObject("dog1.Image")));
-            this.dog1.Location = new System.Drawing.Point(14, 15);
-            this.dog1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dog1.Name = "dog1";
-            this.dog1.Size = new System.Drawing.Size(75, 20);
-            this.dog1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.dog1.TabIndex = 1;
-            this.dog1.TabStop = false;
+            this.dog1Ctrl.Image = ((System.Drawing.Image)(resources.GetObject("dog1Ctrl.Image")));
+            this.dog1Ctrl.Location = new System.Drawing.Point(12, 12);
+            this.dog1Ctrl.Name = "dog1Ctrl";
+            this.dog1Ctrl.Size = new System.Drawing.Size(75, 20);
+            this.dog1Ctrl.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.dog1Ctrl.TabIndex = 1;
+            this.dog1Ctrl.TabStop = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(347, 222);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Location = new System.Drawing.Point(305, 212);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 29);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
             this.button1.Text = "경주시작";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dog2
+            // dog2Ctrl
             // 
-            this.dog2.Image = ((System.Drawing.Image)(resources.GetObject("dog2.Image")));
-            this.dog2.Location = new System.Drawing.Point(15, 63);
-            this.dog2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dog2.Name = "dog2";
-            this.dog2.Size = new System.Drawing.Size(75, 20);
-            this.dog2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.dog2.TabIndex = 3;
-            this.dog2.TabStop = false;
+            this.dog2Ctrl.Image = ((System.Drawing.Image)(resources.GetObject("dog2Ctrl.Image")));
+            this.dog2Ctrl.Location = new System.Drawing.Point(12, 56);
+            this.dog2Ctrl.Name = "dog2Ctrl";
+            this.dog2Ctrl.Size = new System.Drawing.Size(75, 20);
+            this.dog2Ctrl.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.dog2Ctrl.TabIndex = 3;
+            this.dog2Ctrl.TabStop = false;
             // 
-            // dog3
+            // dog3Ctrl
             // 
-            this.dog3.Image = ((System.Drawing.Image)(resources.GetObject("dog3.Image")));
-            this.dog3.Location = new System.Drawing.Point(15, 115);
-            this.dog3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dog3.Name = "dog3";
-            this.dog3.Size = new System.Drawing.Size(75, 20);
-            this.dog3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.dog3.TabIndex = 4;
-            this.dog3.TabStop = false;
+            this.dog3Ctrl.Image = ((System.Drawing.Image)(resources.GetObject("dog3Ctrl.Image")));
+            this.dog3Ctrl.Location = new System.Drawing.Point(13, 111);
+            this.dog3Ctrl.Name = "dog3Ctrl";
+            this.dog3Ctrl.Size = new System.Drawing.Size(75, 20);
+            this.dog3Ctrl.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.dog3Ctrl.TabIndex = 4;
+            this.dog3Ctrl.TabStop = false;
             // 
-            // dog4
+            // dog4Ctrl
             // 
-            this.dog4.Image = ((System.Drawing.Image)(resources.GetObject("dog4.Image")));
-            this.dog4.Location = new System.Drawing.Point(15, 168);
-            this.dog4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dog4.Name = "dog4";
-            this.dog4.Size = new System.Drawing.Size(75, 20);
-            this.dog4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.dog4.TabIndex = 5;
-            this.dog4.TabStop = false;
+            this.dog4Ctrl.Image = ((System.Drawing.Image)(resources.GetObject("dog4Ctrl.Image")));
+            this.dog4Ctrl.Location = new System.Drawing.Point(13, 167);
+            this.dog4Ctrl.Name = "dog4Ctrl";
+            this.dog4Ctrl.Size = new System.Drawing.Size(75, 20);
+            this.dog4Ctrl.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.dog4Ctrl.TabIndex = 5;
+            this.dog4Ctrl.TabStop = false;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(244, 222);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button2.Location = new System.Drawing.Point(224, 212);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 29);
+            this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 6;
             this.button2.Text = "초기화";
             this.button2.UseVisualStyleBackColor = true;
@@ -127,25 +120,24 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(603, 264);
+            this.ClientSize = new System.Drawing.Size(603, 247);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.dog4);
-            this.Controls.Add(this.dog3);
-            this.Controls.Add(this.dog2);
+            this.Controls.Add(this.dog4Ctrl);
+            this.Controls.Add(this.dog3Ctrl);
+            this.Controls.Add(this.dog2Ctrl);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dog1);
-            this.Controls.Add(this.track);
+            this.Controls.Add(this.dog1Ctrl);
+            this.Controls.Add(this.trackCtrl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.track)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dog1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dog2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dog3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dog4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackCtrl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dog1Ctrl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dog2Ctrl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dog3Ctrl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dog4Ctrl)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,12 +145,12 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox track;
-        private System.Windows.Forms.PictureBox dog1;
+        private System.Windows.Forms.PictureBox trackCtrl;
+        private System.Windows.Forms.PictureBox dog1Ctrl;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox dog2;
-        private System.Windows.Forms.PictureBox dog3;
-        private System.Windows.Forms.PictureBox dog4;
+        private System.Windows.Forms.PictureBox dog2Ctrl;
+        private System.Windows.Forms.PictureBox dog3Ctrl;
+        private System.Windows.Forms.PictureBox dog4Ctrl;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Timer timer1;
     }

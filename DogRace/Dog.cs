@@ -11,45 +11,46 @@ namespace DogRace
     {
         private const int STARTING_POSITION = 12;
 
-        private int Track;
-        private PictureBox MyPictureBox;
+        private int trackName;
+        private PictureBox pictureBox;
         private Random random;
 
-        public Dog(int Track, PictureBox MyPictureBox)
+        public Dog(int track, PictureBox pictureBox)
         {
-            this.Track = Track;
-            this.MyPictureBox = MyPictureBox;
-            this.random = new Random(Track);
-            TakeStartingPosition();
+            this.trackName = track;
+            this.pictureBox = pictureBox;
+            this.random = new Random(track);
+            MoveToStartingPosition();
         }
 
         public string GetTrackName()
         {
-            return Track + "번";
+            return trackName + "번";
         }
 
-        public void TakeStartingPosition()
+        public void MoveToStartingPosition()
         {
-            Point location = MyPictureBox.Location;
+            Point location = pictureBox.Location;
             location.X = STARTING_POSITION;
-            MyPictureBox.Location = location;
+            pictureBox.Location = location;
         }
 
         public bool Run(int TrackLength)
         {
-            Point location = MyPictureBox.Location;
+            Move();
+            return GetCurrentPosition() >= TrackLength;
+        }
 
+        private void Move()
+        {
+            Point location = pictureBox.Location;
             location.X += random.Next(1, 30);
-            MyPictureBox.Location = location;
+            pictureBox.Location = location;
+        }
 
-            Size size = MyPictureBox.Size;
-
-            if (location.X + size.Width >= TrackLength)
-            {
-                return true;
-            }
-
-            return false;
+        private int GetCurrentPosition()
+        {
+            return pictureBox.Location.X + pictureBox.Size.Width;
         }
     }
 }

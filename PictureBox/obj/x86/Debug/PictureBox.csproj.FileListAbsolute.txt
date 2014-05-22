@@ -7,3 +7,11 @@ D:\Work\Project\C#\Week12\PictureBox\obj\x86\Debug\PictureBox.exe
 D:\Work\Project\C#\Week12\PictureBox\obj\x86\Debug\PictureBox.pdb
 C:\Work\CShartp\PE-Week12\PictureBox\obj\x86\Debug\PictureBox.exe
 C:\Work\CShartp\PE-Week12\PictureBox\obj\x86\Debug\PictureBox.pdb
+D:\Work\Project\C#\PE-Week12\PictureBox\obj\x86\Debug\PictureBox.exe
+D:\Work\Project\C#\PE-Week12\PictureBox\obj\x86\Debug\PictureBox.pdb
+D:\Work\Project\C#\PE-Week12\PictureBox\bin\Debug\PictureBox.exe
+D:\Work\Project\C#\PE-Week12\PictureBox\bin\Debug\PictureBox.pdb
+D:\Work\Project\C#\PE-Week12\PictureBox\obj\x86\Debug\PictureBox.csprojResolveAssemblyReference.cache
+D:\Work\Project\C#\PE-Week12\PictureBox\obj\x86\Debug\PictureBox.Form1.resources
+D:\Work\Project\C#\PE-Week12\PictureBox\obj\x86\Debug\PictureBox.Properties.Resources.resources
+D:\Work\Project\C#\PE-Week12\PictureBox\obj\x86\Debug\PictureBox.csproj.GenerateResource.Cache

@@ -5,3 +5,5 @@ C:\Work\CShartp\PE-Week12\Painter\obj\x86\Debug\Painter.Properties.Resources.res
 C:\Work\CShartp\PE-Week12\Painter\obj\x86\Debug\Painter.csproj.GenerateResource.Cache
 C:\Work\CShartp\PE-Week12\Painter\obj\x86\Debug\Painter.exe
 C:\Work\CShartp\PE-Week12\Painter\obj\x86\Debug\Painter.pdb
+D:\Work\Project\C#\PE-Week12\Painter\obj\x86\Debug\Painter.exe
+D:\Work\Project\C#\PE-Week12\Painter\obj\x86\Debug\Painter.pdb

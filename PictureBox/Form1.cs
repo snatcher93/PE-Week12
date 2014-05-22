@@ -18,7 +18,7 @@ namespace PictureBox
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            Point location = dog.Location;
+            Point location = dogCtrl.Location;
 
             switch (e.KeyCode)
             {
@@ -36,7 +36,7 @@ namespace PictureBox
                     break;
             }
 
-            dog.Location = location;
+            dogCtrl.Location = location;
         }
     }
 }
