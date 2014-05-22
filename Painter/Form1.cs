@@ -40,57 +40,71 @@ namespace Painter
         {
             isMoving = true;
             start = end = e.Location;
-            DrawMovingRectangle(start, end);
+            DrawDragRange(start, end);
         }
 
         private void Form1_MouseMove(object sender, MouseEventArgs e)
         {
-            if (isMoving)
+            if (!isMoving)
             {
-                using (Graphics g = CreateGraphics())
-                {
-                    DrawMovingRectangle(start, end);
-                    end = e.Location;
-                    DrawMovingRectangle(start, end);
-                }
+                return;
             }
+
+            RedrawDragRange(e.Location);
         }
 
         private void Form1_MouseUp(object sender, MouseEventArgs e)
         {
-            if (isMoving)
+            if (!isMoving)
             {
-                using (Graphics g = CreateGraphics())
-                {
-                    DrawMovingRectangle(start, end);
-                    end = e.Location;
-
-                    switch (shapeType)
-                    {
-                        case Shapes.RECTANGLE:
-                            shapes.Add(new Rectangle(start, end, shapeColor));
-                            break;
-                        case Shapes.TRIANGLE:
-                            shapes.Add(new Triangle(
-                                    new Point(start.X + (end.X - start.X) / 2, start.Y), 
-                                    new Point(start.X, end.Y),
-                                    end,
-                                    shapeColor));
-                            break;
-                        case Shapes.CIRCLE:
-                            shapes.Add(
-                                new Circle(start, end, shapeColor));
-                            break;
-                    }
-
-                    Invalidate();
-                }
-
-                isMoving = false;
+                return;
             }
+
+            CreateShape(e.Location);
+            Invalidate();
+            isMoving = false;
         }
 
-        private void DrawMovingRectangle(Point start, Point end)
+        private void RedrawDragRange(Point current)
+        {
+            EraseDragRange(start, end);
+            end = current;
+            DrawDragRange(start, end);
+        }
+
+
+        private void CreateShape(Point current)
+        {
+            EraseDragRange(start, end);
+            end = current;
+            AddShapes();
+        }
+
+        private void AddShapes()
+        {
+            switch (shapeType)
+            {
+                case Shapes.RECTANGLE:
+                    shapes.Add(new Rectangle(start, end, shapeColor));
+                    break;
+                case Shapes.TRIANGLE:
+                    shapes.Add(new Triangle(new Point(start.X + (end.X - start.X) / 2, start.Y),
+                            new Point(start.X, end.Y), end, shapeColor));
+                    break;
+                case Shapes.CIRCLE:
+                    shapes.Add(new Circle(start, end, shapeColor));
+                    break;
+            }
+
+            Invalidate();
+        }
+
+        private void EraseDragRange(Point start, Point end)
+        {
+            DrawDragRange(start, end);
+        }
+
+        private void DrawDragRange(Point start, Point end)
         {
             ControlPaint.DrawReversibleFrame(new System.Drawing.Rectangle(PointToScreen(start), new Size(end.X - start.X, end.Y - start.Y)), Color.Gray, FrameStyle.Dashed);
         }

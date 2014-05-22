@@ -47,7 +47,7 @@
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(600, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(424, 27);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -55,7 +55,7 @@
             // 
             this.RectangleTool.Checked = true;
             this.RectangleTool.CheckOnClick = true;
-            this.RectangleTool.CheckState = System.Windows.Forms.CheckState.Indeterminate;
+            this.RectangleTool.CheckState = System.Windows.Forms.CheckState.Checked;
             this.RectangleTool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.RectangleTool.Image = ((System.Drawing.Image)(resources.GetObject("RectangleTool.Image")));
             this.RectangleTool.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -100,7 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 525);
+            this.ClientSize = new System.Drawing.Size(424, 400);
             this.Controls.Add(this.toolStrip1);
             this.DoubleBuffered = true;
             this.Name = "Form1";
